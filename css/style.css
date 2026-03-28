@@ -1,0 +1,958 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    font-family: Exo, sans-serif;
+}
+
+.my-7 {
+    margin-block: 70px;
+}
+
+.mt-2 {
+    margin-top: 20px;
+}
+
+.t-end {
+    text-align: end;
+}
+
+.container-1 {
+    padding-top: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fw-b {
+    font-weight: bold;
+}
+
+header {
+    background-color: #f5f3ff;
+    width: 100%;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1111;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: width 0.3s;
+}
+
+.nav-icon {
+    display: flex;
+
+}
+
+.nav-icon .helicopter {
+    color: #f5f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Drone-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.helicopter {
+    background-color: #8e51ff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-block: -10px;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-4 {
+    gap: 40px;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-content {
+    width: 50%;
+    height: 300px;
+}
+
+.about-border {
+    border: 2px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.about-img-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    background-color: #a684ff;
+    padding: 2px 15px;
+    border-radius: 25px;
+    color: #f5f3ff;
+}
+
+.experience {
+    line-height: 30px;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1111111;
+}
+
+.badges {
+    display: flex;
+    gap: 20px;
+
+}
+
+.prices {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.current {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.prev {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.discount {
+    background-color: #ffe2e2;
+    color: red;
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-block: 20px;
+    padding: 20px 40px;
+    border: none;
+    background-color: rgb(142, 81, 255);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    color: whitesmoke;
+}
+
+.btn-2 {
+    margin-block: 20px;
+    padding: 20px 40px;
+    border-width: 2px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    color: #333333;
+    border: 2px solid #dadde3;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+.btn-2:hover {
+    scale: 1.1;
+}
+
+.compare {
+    background-color: #f5f3ff;
+    padding: 50px;
+}
+
+.Compare-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.comopare-style {
+    color: #8e51ff;
+}
+
+.see-why-style {
+    text-align: center;
+    font-size: 20px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.Obstacle-Avoidance {
+    padding-left: 5px;
+}
+
+.logotextbattery {
+    padding-right: 65px;
+}
+
+.Price {
+
+    margin-left: -85px;
+}
+
+
+
+.wight {
+    padding-right: 25px;
+}
+
+.Weight-text {
+    margin-right: 75px;
+}
+
+.Weather-style {
+    margin-left: 10px;
+}
+
+.Front-Back {
+    color: #f54900;
+}
+
+.number-style {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    background-color: #8e51ff;
+    color: white;
+}
+
+.number-style-2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(51, 51, 51);
+}
+
+.number-style-3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(51, 51, 51);
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid gray;
+}
+
+.table-badge {
+    background-color: #8837ec91;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+.td-bg {
+    background-color: #ede9fe;
+}
+
+.Our-Product {
+    margin-top: 20px;
+    color: #8837ec91;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.AirMaster-Pro {
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #333333;
+    margin-top: 30px;
+}
+
+
+.Competitor-A {
+    color: #787f8d;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.FlightMax-4K {
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+
+.Competitor-B {
+    color: #787f8d;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.SkyHawk-Elite {
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.Competitor-C {
+    color: #787f8d;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.table-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.radius-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.radius-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.winner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+
+}
+
+.winner {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-color: #ebecef;
+    border-radius: 10px;
+    width: fit-content;
+    line-height: 25px;
+    padding-bottom: 20px;
+    padding-left: -5px;
+    padding-top: 10px;
+    padding-right: 20px;
+    color: #00a63e;
+}
+
+.winner p {
+    padding-right: 10px;
+}
+
+.winner i {
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
+.trophy {
+    font-size: 20px;
+
+}
+
+.left {
+    height: 1000px;
+    width: 30%;
+}
+
+.number-style-4 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgb(51, 51, 51);
+}
+
+.Based-on {
+    line-height: 35px;
+}
+
+.right {
+    width: 70%;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-block: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-img {
+    width: 70px;
+    height: 70px;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+.inner-1 {
+    background-color: gold;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.five-star {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.progress {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.inner-2 {
+    background-color: gold;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.inner-3 {
+    background-color: gold;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.left-card {
+    border: 6px solid black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    position: sticky;
+    top: 70px;
+    margin-top: 30px;
+
+}
+
+.border-under {
+    height: 1px;
+    background-color: #333333;
+    margin: 20px 0;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+}
+
+.outer {
+    flex: 1;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.inner-1 {
+    background-color: gold;
+    width: 78%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.inner-2 {
+    background-color: gold;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.inner-3 {
+    background-color: gold;
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.inner-4 {
+    background-color: gold;
+    width: 5%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.inner-5 {
+    background-color: gold;
+    width: 2%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.percent {
+    min-width: 40px;
+    text-align: right;
+}
+
+.Professional-Photographe {
+    margin-top: 10px;
+}
+
+.star-profile {
+    line-height: 40px;
+}
+
+.The-DJI-Mavic {
+    line-height: 30px;
+}
+
+.percent-under-2 {
+    margin-left: 30px;
+}
+
+.continer-button {
+    text-align: center;
+}
+
+.button-last {
+    background-color: #8e51ff;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: #8e51ff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.button-last:hover {
+    background-color: #ddd;
+    color: #8e51ff;
+
+}
+
+.container-3 {
+
+    background-color: #f7f5ff;
+}
+
+.Complete {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    color: rgb(51, 51, 51);
+}
+
+.Setup {
+    color: #8e51ff;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.Essential {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.all-crads-sec-3 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.cards-section-3 {
+    position: relative;
+    width: 230px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 30px 0;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.badge {
+    position: absolute;
+    top: 25px;
+    left: 35px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.accessory {
+    background-color: #38b2ac;
+}
+
+.essential {
+    background-color: #2f855a;
+}
+
+.power {
+    background-color: #00b0ff;
+}
+
+.safety {
+    background-color: #ff6d00;
+}
+
+.cards-section-3 img {
+    z-index: 1;
+}
+
+
+.cards-section-3 {
+    padding: 10px 20px;
+}
+
+.cards-section-3 img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.6s;
+    display: block;
+    object-fit: cover;
+}
+
+.cards-section-3:hover img {
+    transform: scale(1.1);
+
+}
+
+.Pro-Controller {
+    margin-top: 20px;
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Enhanced {
+    line-height: 30px;
+}
+
+.btn-card-sec-3 {
+    background-color: #8e51ff;
+    color: white;
+    border: #8e51ff;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.ViewAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-view {
+    background-color: #f7f5ff;
+    color: #7008e7;
+    margin-bottom: 50px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border-color: #7008e7;
+    transition: 0.3s ease;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button-view:hover {
+    background-color: #7008e7;
+    color: #ddd;
+}
+
+.icon-footer {
+    display: flex;
+
+}
+
+.container-5 {
+    background-color: #101828;
+    margin-bottom: 50px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.DJI-style {
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 10px;
+}
+
+.icon-footer {
+    padding-top: 20px;
+}
+
+.helicopter-footer {
+    background-color: #8e51ff;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DJI-style {
+    padding-top: 5px;
+}
+
+.Leading-the-future {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding-top: 30px;
+}
+
+.logos-social {
+    padding-top: 20px;
+    display: flex;
+    gap: 13px;
+}
+
+.facebook {
+    background-color: #1e2939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 17px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.facebook:hover {
+    background-color: rgb(0, 110, 255);
+
+}
+
+.twitter {
+    background-color: #1e2939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 17px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.twitter:hover {
+    background-color: rgb(0, 195, 255);
+}
+
+.instagram {
+    background-color: #1e2939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 17px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.instagram:hover {
+    background-color: indianred;
+}
+
+.youtube {
+    background-color: #1e2939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 17px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.youtube:hover {
+    background-color: rgba(255, 0, 0, 0.788);
+}
+
+.item-2 {
+    color: white;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.Products {
+    font-weight: 600;
+    font-size: 18;
+    line-height: 28px;
+    color: white;
+
+}
+
+.dvider {
+    background-color: #1e2939;
+    height: 3px;
+    width: 100%;
+    margin-top: 30PX;
+    margin-bottom: 30px;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.images span {
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images img {
+    width: 40px;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-5 {
+    margin-bottom: 0;
+    color: #101828;
+    padding-bottom: 40px;
+}
+
+.All-rights-reserved {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
