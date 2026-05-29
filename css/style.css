@@ -1207,7 +1207,12 @@ th {
     }
 }
 
-
-
-   
+@media (max-width: 600px) {
+    th:nth-child(2), td:nth-child(2) {
+        width: 60% !important; /* خلي عمود البيانات ياخد مساحة أكبر */
+    }
+    th:nth-child(1), td:nth-child(1) {
+        width: 40% !important; /* عمود الـ Features */
+    }
+}
 
